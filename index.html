@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio | Real Estate & Architecture Websites</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-hero-animate>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a class="brand" href="#hero" aria-label="Studio home">
+        <span class="brand__name">Studio</span>
+        <span class="brand__place">Real Estate</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:7188086479">718-808-6479</a>
+        <a class="btn-inquire" href="#inquire">Inquire</a>
+      </div>
+    </header>
+
+    <nav class="site-menu" id="site-menu" aria-hidden="true">
+      <div class="site-menu__inner">
+        <ul class="site-menu__links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#statement">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#inquire">Start a Project</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__media" aria-hidden="true">
+          <img
+            src="hero_image/2022PB63_7179-5-scaled.jpg"
+            alt=""
+            class="hero__image is-active"
+            data-hero-slide
+          />
+          <img
+            src="hero_image/bg-menu-full.jpg"
+            alt=""
+            class="hero__image"
+            data-hero-slide
+          />
+          <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-hero-animate>Architecture · Real Estate · Digital</p>
+          <h1 class="hero__title">
+            <span data-hero-animate>Digital Homes</span>
+            <span data-hero-animate>For Landmark</span>
+            <span data-hero-animate>Properties</span>
+          </h1>
+          <p class="hero__subtitle" data-hero-animate>
+            Premium websites for developers, architects, and real-estate brands
+          </p>
+          <div class="hero__cta" data-hero-animate>
+            <a class="btn-inquire hero__btn" href="#statement">View Work</a>
+          </div>
+        </div>
+
+        <a
+          class="scroll-hint"
+          href="#statement"
+          aria-label="Scroll to next section"
+          data-hero-animate
+        >
+          <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path
+              d="M6 9l6 6 6-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+
+      <section class="statement" id="statement" data-animate-section>
+        <div class="statement__media" aria-hidden="true">
+          <img
+            src="hero_image/second_hero.avif"
+            alt=""
+            class="statement__image"
+          />
+          <div class="statement__overlay"></div>
+        </div>
+
+        <div class="statement__layout">
+          <p class="statement__eyebrow">
+            <span>Selected Digital Work</span>
+            <span aria-hidden="true">•</span>
+            <span>Architecture</span>
+            <span aria-hidden="true">•</span>
+            <span>Real Estate</span>
+          </p>
+
+          <h2 class="statement__title">
+            <span class="statement__line">Websites</span>
+            <span class="statement__line">Built to</span>
+            <span class="statement__line">Stand Out.</span>
+          </h2>
+
+          <p class="statement__copy">
+            <span class="statement__caret" aria-hidden="true">&gt;</span>
+            Premium digital experiences for developers, architects and
+            real-estate brands — designed to make every property feel as
+            considered online as it is in the real world.
+          </p>
+
+          <a class="statement__explore" href="#projects">
+            <span>Explore</span>
+            <span class="statement__explore-line" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="services" id="services" data-animate-section>
+        <div class="services__glow" aria-hidden="true"></div>
+        <div class="services__wrap">
+          <header class="services__intro">
+            <p class="services__eyebrow">
+              <span class="services__eyebrow-line" aria-hidden="true"></span>
+              What We Do
+            </p>
+            <h2 class="services__title">
+              <span class="services__title-line">
+                <span>We build websites that help</span>
+              </span>
+              <span class="services__title-line">
+                <span>real businesses grow.</span>
+              </span>
+            </h2>
+            <p class="services__lead">
+              From strategy and design to SEO and launch, we create digital
+              experiences that help property brands attract buyers, build trust,
+              and convert interest into inquiries.
+            </p>
+            <a class="services__cta" href="#inquire">
+              Let’s build together
+              <span class="services__cta-icon" aria-hidden="true">↗</span>
+            </a>
+          </header>
+
+          <div class="services__panel">
+            <ul class="services__rows">
+              <li class="services__row" data-service-row data-index="01">
+                <div class="services__num"><span>01</span></div>
+                <div class="services__icon" aria-hidden="true">
+                  <img src="what_we_do_assets/01_strategy_icon.png" alt="" />
+                </div>
+                <div class="services__info">
+                  <p class="services__tag">Discover &amp; Plan</p>
+                  <h3>Strategy &amp; Consultation</h3>
+                  <p>
+                    We map your audience, market position, and project goals so
+                    every page supports how your property actually sells.
+                  </p>
+                </div>
+                <div class="services__thumb">
+                  <img src="what_we_do_assets/01_strategy.jpg" alt="" />
+                  <span class="services__caption">Turn ideas into opportunities</span>
+                </div>
+                <a class="services__arrow" href="#inquire" aria-label="Strategy and consultation">
+                  <span aria-hidden="true">→</span>
+                </a>
+              </li>
+
+              <li class="services__row" data-service-row data-index="02">
+                <div class="services__num"><span>02</span></div>
+                <div class="services__icon" aria-hidden="true">
+                  <img src="what_we_do_assets/02_brand_icon.png" alt="" />
+                </div>
+                <div class="services__info">
+                  <p class="services__tag">Craft &amp; Express</p>
+                  <h3>Brand Identity</h3>
+                  <p>
+                    Visual systems, typography, and art direction that make your
+                    development feel as considered online as it is on site.
+                  </p>
+                </div>
+                <div class="services__thumb">
+                  <img src="what_we_do_assets/02_brand.jpg" alt="" />
+                  <span class="services__caption">Shape a brand that feels true</span>
+                </div>
+                <a class="services__arrow" href="#inquire" aria-label="Brand identity">
+                  <span aria-hidden="true">→</span>
+                </a>
+              </li>
+
+              <li class="services__row" data-service-row data-index="03">
+                <div class="services__num"><span>03</span></div>
+                <div class="services__icon" aria-hidden="true">
+                  <img src="what_we_do_assets/03_web_design_icon.png" alt="" />
+                </div>
+                <div class="services__info">
+                  <p class="services__tag">Design &amp; Experience</p>
+                  <h3>Web Design</h3>
+                  <p>
+                    Editorial layouts for residences, amenities, and listings —
+                    designed to feel premium, clear, and easy to navigate.
+                  </p>
+                </div>
+                <div class="services__thumb">
+                  <img src="what_we_do_assets/03_web_design.jpg" alt="" />
+                  <span class="services__caption">Design sites people remember</span>
+                </div>
+                <a class="services__arrow" href="#inquire" aria-label="Web design">
+                  <span aria-hidden="true">→</span>
+                </a>
+              </li>
+
+              <li class="services__row" data-service-row data-index="04">
+                <div class="services__num"><span>04</span></div>
+                <div class="services__icon" aria-hidden="true">
+                  <img src="what_we_do_assets/04_development_icon.png" alt="" />
+                </div>
+                <div class="services__info">
+                  <p class="services__tag">Build &amp; Launch</p>
+                  <h3>Development</h3>
+                  <p>
+                    Fast, responsive builds with CMS tools for availability,
+                    floor plans, and updates — without constant developer help.
+                  </p>
+                </div>
+                <div class="services__thumb">
+                  <img src="what_we_do_assets/04_development.jpg" alt="" />
+                  <span class="services__caption">Code that performs beautifully</span>
+                </div>
+                <a class="services__arrow" href="#inquire" aria-label="Development">
+                  <span aria-hidden="true">→</span>
+                </a>
+              </li>
+
+              <li class="services__row" data-service-row data-index="05">
+                <div class="services__num"><span>05</span></div>
+                <div class="services__icon" aria-hidden="true">
+                  <img src="what_we_do_assets/05_seo_icon.png" alt="" />
+                </div>
+                <div class="services__info">
+                  <p class="services__tag">Optimize &amp; Attract</p>
+                  <h3>SEO &amp; Lead Generation</h3>
+                  <p>
+                    Technical SEO, local search, and lead flows so the right
+                    buyers find your project and know how to inquire.
+                  </p>
+                </div>
+                <div class="services__thumb">
+                  <img src="what_we_do_assets/05_seo.jpg" alt="" />
+                  <span class="services__caption">Get found by the right people</span>
+                </div>
+                <a class="services__arrow" href="#inquire" aria-label="SEO and lead generation">
+                  <span aria-hidden="true">→</span>
+                </a>
+              </li>
+
+              <li class="services__row" data-service-row data-index="06">
+                <div class="services__num"><span>06</span></div>
+                <div class="services__icon" aria-hidden="true">
+                  <img src="what_we_do_assets/06_support_icon.png" alt="" />
+                </div>
+                <div class="services__info">
+                  <p class="services__tag">Maintain &amp; Scale</p>
+                  <h3>Ongoing Support</h3>
+                  <p>
+                    Updates, performance checks, and steady care so your site
+                    stays sharp long after launch day.
+                  </p>
+                </div>
+                <div class="services__thumb">
+                  <img src="what_we_do_assets/06_support.jpg" alt="" />
+                  <span class="services__caption">Stay sharp after launch</span>
+                </div>
+                <a class="services__arrow" href="#inquire" aria-label="Ongoing support">
+                  <span aria-hidden="true">→</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="vision" id="inquire" data-animate-section>
+        <div class="vision__media" aria-hidden="true">
+          <div class="vision__image">
+            <img src="hero_image/CTA.jpg" alt="" />
+          </div>
+          <div class="vision__overlay"></div>
+        </div>
+        <div class="vision__content">
+          <h2 class="vision__title">
+            <span>Let’s turn your vision</span>
+            <span>into impact.</span>
+          </h2>
+          <a class="vision__cta" href="mailto:hello@studio.com">
+            Start a project
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" data-animate-section>
+        <div class="projects__wrap">
+          <header class="projects__intro">
+            <p class="projects__eyebrow">
+              <span class="projects__eyebrow-line" aria-hidden="true"></span>
+              Live Work
+            </p>
+            <h2 class="projects__title">
+              <span class="projects__title-line">
+                <span>Sites that</span>
+              </span>
+              <span class="projects__title-line">
+                <span>stop the scroll.</span>
+              </span>
+            </h2>
+            <p class="projects__lead">
+              Six launches built to look expensive and convert — beauty, hospitality,
+              SaaS, and brands that needed more than a template.
+            </p>
+          </header>
+
+          <ul class="projects__grid">
+            <li class="projects__item" data-project-item>
+              <a class="projects__card" href="https://cfab.com/" target="_blank" rel="noopener noreferrer">
+                <div class="projects__media"><img src="images/projects/cfab.jpg" alt="CFAB website" /></div>
+                <div class="projects__meta">
+                  <span class="projects__index">01</span>
+                  <div class="projects__copy">
+                    <h3>CFAB</h3>
+                    <p>cfab.com</p>
+                  </div>
+                  <span class="projects__link" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item" data-project-item>
+              <a class="projects__card" href="https://trybello.com/" target="_blank" rel="noopener noreferrer">
+                <div class="projects__media"><img src="images/projects/trybello.jpg" alt="Try Bello website" /></div>
+                <div class="projects__meta">
+                  <span class="projects__index">02</span>
+                  <div class="projects__copy">
+                    <h3>Try Bello</h3>
+                    <p>trybello.com</p>
+                  </div>
+                  <span class="projects__link" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item" data-project-item>
+              <a class="projects__card" href="https://natuf.in/" target="_blank" rel="noopener noreferrer">
+                <div class="projects__media"><img src="images/projects/natuf.jpg" alt="Natuf website" /></div>
+                <div class="projects__meta">
+                  <span class="projects__index">03</span>
+                  <div class="projects__copy">
+                    <h3>Natuf</h3>
+                    <p>natuf.in</p>
+                  </div>
+                  <span class="projects__link" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item" data-project-item>
+              <a class="projects__card" href="https://thrivin.com/" target="_blank" rel="noopener noreferrer">
+                <div class="projects__media"><img src="images/projects/thrivin.jpg" alt="Thrivin website" /></div>
+                <div class="projects__meta">
+                  <span class="projects__index">04</span>
+                  <div class="projects__copy">
+                    <h3>Thrivin</h3>
+                    <p>thrivin.com</p>
+                  </div>
+                  <span class="projects__link" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item" data-project-item>
+              <a class="projects__card" href="https://londonbrowcompany.com/" target="_blank" rel="noopener noreferrer">
+                <div class="projects__media"><img src="images/projects/londonbrow.jpg" alt="London Brow Company website" /></div>
+                <div class="projects__meta">
+                  <span class="projects__index">05</span>
+                  <div class="projects__copy">
+                    <h3>London Brow Company</h3>
+                    <p>londonbrowcompany.com</p>
+                  </div>
+                  <span class="projects__link" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item" data-project-item>
+              <a class="projects__card" href="https://ambela.com/" target="_blank" rel="noopener noreferrer">
+                <div class="projects__media"><img src="images/projects/ambela.jpg" alt="Ambela website" /></div>
+                <div class="projects__meta">
+                  <span class="projects__index">06</span>
+                  <div class="projects__copy">
+                    <h3>Ambela</h3>
+                    <p>ambela.com</p>
+                  </div>
+                  <span class="projects__link" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="projects__strip">
+          <div class="projects__marquee" aria-hidden="true">
+            <div class="projects__track">
+              <figure class="projects__chip">
+                <img src="images/projects/anastasia.jpg" alt="" />
+                <figcaption>Anastasia</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/englishpadho.jpg" alt="" />
+                <figcaption>English Padho</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/touristalindia.jpg" alt="" />
+                <figcaption>Touristal India</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/dgxfilms.jpg" alt="" />
+                <figcaption>DGX Films</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/butlerco.jpg" alt="" />
+                <figcaption>Butler Co</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/saas.jpg" alt="" />
+                <figcaption>SaaS</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/anastasia.jpg" alt="" />
+                <figcaption>Anastasia</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/englishpadho.jpg" alt="" />
+                <figcaption>English Padho</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/touristalindia.jpg" alt="" />
+                <figcaption>Touristal India</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/dgxfilms.jpg" alt="" />
+                <figcaption>DGX Films</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/butlerco.jpg" alt="" />
+                <figcaption>Butler Co</figcaption>
+              </figure>
+              <figure class="projects__chip">
+                <img src="images/projects/saas.jpg" alt="" />
+                <figcaption>SaaS</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <a class="projects__more" href="work.html">
+            Explore more
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-animate-section>
+      <div class="site-footer__inner">
+        <a class="brand site-footer__brand" href="#hero" aria-label="Studio home">
+          <span class="brand__name">Studio</span>
+          <span class="brand__place">Real Estate</span>
+        </a>
+
+        <nav class="site-footer__nav" aria-label="Footer">
+          <a href="#hero">Home</a>
+          <a href="#statement">Work</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#inquire">Inquire</a>
+        </nav>
+
+        <div class="site-footer__actions">
+          <a class="site-footer__phone" href="tel:7188086479">718-808-6479</a>
+          <a class="btn-inquire site-footer__btn" href="#inquire">Start a project</a>
+        </div>
+      </div>
+
+      <div class="site-footer__bar">
+        <p>Architecture · Real Estate · Digital</p>
+        <p>© 2026 Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
