@@ -213,6 +213,99 @@
     }
   }
 
+  /* ---------- Projects headline rotation ---------- */
+  const projectsSection = document.querySelector("#projects");
+  const projectsTitleLines = [
+    ...document.querySelectorAll("[data-projects-title] .projects__title-line > span"),
+  ];
+  const projectsPhrases = [
+    ["Sites that", "stop the scroll."],
+    ["Pages that", "feel expensive."],
+    ["Launches built", "to convert."],
+  ];
+  let projectsPhraseTimer = 0;
+  let projectsSwapTimer = 0;
+  let projectsPhraseIndex = 0;
+  let projectsPlaying = false;
+
+  const applyProjectsPhrase = (index, withMotion) => {
+    const phrase = projectsPhrases[index];
+    if (!phrase || projectsTitleLines.length < 2) return;
+
+    const write = () => {
+      projectsTitleLines.forEach((line, i) => {
+        line.textContent = phrase[i];
+        line.style.transitionDelay = `${0.08 + i * 0.16}s`;
+        line.classList.remove("is-out", "is-prep");
+      });
+    };
+
+    if (!withMotion) {
+      write();
+      return;
+    }
+
+    projectsTitleLines.forEach((line, i) => {
+      line.style.transitionDelay = `${i * 0.1}s`;
+      line.classList.add("is-out");
+      line.classList.remove("is-prep");
+    });
+
+    window.clearTimeout(projectsSwapTimer);
+    projectsSwapTimer = window.setTimeout(() => {
+      projectsTitleLines.forEach((line, i) => {
+        line.textContent = phrase[i];
+        line.style.transition = "none";
+        line.classList.add("is-prep");
+        line.classList.remove("is-out");
+        window.requestAnimationFrame(() => {
+          window.requestAnimationFrame(() => {
+            line.style.transition = "";
+            line.style.transitionDelay = `${0.06 + i * 0.16}s`;
+            line.classList.remove("is-prep");
+          });
+        });
+      });
+    }, 460);
+  };
+
+  const startProjectsHeadline = () => {
+    if (prefersReducedMotion || projectsPlaying || projectsTitleLines.length < 2) return;
+    projectsPlaying = true;
+    projectsSection?.classList.add("is-live");
+    projectsPhraseIndex = 0;
+    applyProjectsPhrase(0, false);
+    window.clearInterval(projectsPhraseTimer);
+    projectsPhraseTimer = window.setInterval(() => {
+      projectsPhraseIndex = (projectsPhraseIndex + 1) % projectsPhrases.length;
+      applyProjectsPhrase(projectsPhraseIndex, true);
+    }, 4800);
+  };
+
+  const stopProjectsHeadline = () => {
+    projectsPlaying = false;
+    window.clearInterval(projectsPhraseTimer);
+    window.clearTimeout(projectsSwapTimer);
+    applyProjectsPhrase(0, false);
+    projectsSection?.classList.remove("is-live");
+  };
+
+  if (projectsSection && projectsTitleLines.length) {
+    if (!prefersReducedMotion) {
+      const projectsLiveObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.2) {
+            startProjectsHeadline();
+          } else {
+            stopProjectsHeadline();
+          }
+        },
+        { threshold: [0, 0.2, 0.45] }
+      );
+      projectsLiveObserver.observe(projectsSection);
+    }
+  }
+
   /* ---------- Approach copy + live motion ---------- */
   const approach = document.querySelector(".approach");
   const approachCopy = document.querySelector("[data-approach-copy]");
