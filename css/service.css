@@ -54,7 +54,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-kicker {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.28em;
@@ -74,7 +74,7 @@ body.is-ready.page-service .svc-hero__rail {
   gap: 0.65rem;
   min-height: 2.85rem;
   padding: 0.7rem 1.2rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
@@ -158,7 +158,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-hero__eyebrow {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.3em;
@@ -168,7 +168,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-hero__title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(2.6rem, 7vw, 5.4rem);
   line-height: 0.95;
@@ -186,7 +186,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-hero__copy {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.7;
@@ -203,7 +203,7 @@ body.is-ready.page-service .svc-hero__rail {
   flex-direction: column;
   gap: 1.1rem;
   transform: translateY(-50%);
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.58rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -232,7 +232,7 @@ body.is-ready.page-service .svc-hero__rail {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -271,7 +271,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-intro__copy h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(2rem, 4.5vw, 3.4rem);
   line-height: 1.05;
@@ -280,7 +280,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-intro__copy > p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.7;
@@ -297,7 +297,7 @@ body.is-ready.page-service .svc-hero__rail {
 
 .svc-stats strong {
   display: block;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   letter-spacing: -0.03em;
@@ -305,7 +305,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-stats span {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -383,7 +383,7 @@ body.is-ready.page-service .svc-hero__rail {
 
 .svc-compare__caption {
   margin-top: 0.75rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -472,7 +472,7 @@ body.is-ready.page-service .svc-hero__rail {
 
 .svc-core__body span:first-child,
 .svc-core__back > span:first-child {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.62rem;
   letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 0.55);
@@ -480,7 +480,7 @@ body.is-ready.page-service .svc-hero__rail {
 
 .svc-core__body h3,
 .svc-core__back h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(1.35rem, 2vw, 1.75rem);
   letter-spacing: -0.02em;
@@ -489,7 +489,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-core__body p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 0.92rem;
   line-height: 1.55;
@@ -536,7 +536,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-core__back p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 0.92rem;
   line-height: 1.6;
@@ -553,7 +553,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-core__back li {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 0.78rem;
   letter-spacing: 0.04em;
@@ -578,7 +578,7 @@ body.is-ready.page-service .svc-hero__rail {
   align-items: center;
   gap: 0.55rem;
   margin-top: 1.25rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
@@ -625,7 +625,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-process__intro h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(2.2rem, 5vw, 4rem);
   line-height: 1;
@@ -655,7 +655,7 @@ body.is-ready.page-service .svc-hero__rail {
   display: flex;
   gap: 0.55rem;
   margin-top: 0.7rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -695,7 +695,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-expertise__intro h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(2rem, 4.5vw, 3.4rem);
   line-height: 1.05;
@@ -704,7 +704,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-expertise__intro p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.7;
@@ -736,7 +736,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-expertise__grid h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
@@ -805,7 +805,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-why__copy h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(2rem, 4.5vw, 3.4rem);
   line-height: 1.05;
@@ -814,7 +814,7 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-why__copy p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.7;
@@ -830,7 +830,7 @@ body.is-ready.page-service .svc-hero__rail {
 
 .svc-why__points span {
   display: block;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.62rem;
   letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 0.45);
@@ -838,14 +838,14 @@ body.is-ready.page-service .svc-hero__rail {
 }
 
 .svc-why__points h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: 1.25rem;
   margin-bottom: 0.4rem;
 }
 
 .svc-why__points p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 0.92rem;
   line-height: 1.55;

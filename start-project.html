@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Studio Real Estate</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--p:#f3f0e9;--p2:#e7e3da;--i:#11110f;--m:#77736b;--l:rgba(17,17,15,.17);--d:#121210;--s:"Playfair Display",Georgia,serif;--n:"DM Sans",Arial,sans-serif;--e:cubic-bezier(.22,1,.36,1)}
+.page-start{background:var(--p);overflow-x:hidden}
+.page-start main{color:var(--i);font-family:var(--n)}
+.page-start main a{text-decoration:none;color:inherit}
+.page-start main button,.page-start main input,.page-start main textarea{font:inherit}
+.page-start .site-header{position:absolute;z-index:100;color:#fff}
+.hero{height:88svh;min-height:650px;position:relative;color:#fff;display:flex;align-items:flex-end;overflow:hidden;background:#181816}.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,#000b,#0002),linear-gradient(0deg,#0008,transparent 65%),url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2400&q=90") center/cover;animation:z 12s var(--e) forwards}.hero-grid{position:absolute;inset:0;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:12.5vw 12.5vw;opacity:.2}@keyframes z{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero-content{position:relative;z-index:2;width:100%;padding:0 4vw 5.5vw;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:end}.eyebrow,.label{font-size:.56rem;text-transform:uppercase;letter-spacing:.3em;opacity:.62;margin-bottom:18px}.hero h1{font-family:var(--s);font-weight:400;font-size:clamp(4.5rem,10vw,10.5rem);line-height:.82;letter-spacing:-.065em}.hero h1 em,.cta h2 em,.statement h2 em{font-style:italic}.hero-copy{max-width:330px;justify-self:end}.hero-copy p{color:#fffb;font-size:.77rem;line-height:1.8;margin-bottom:25px}.hint{font-size:.53rem;text-transform:uppercase;letter-spacing:.18em;color:#fff7}.scroll{position:absolute;right:4vw;bottom:28px;writing-mode:vertical-rl;font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;opacity:.5;z-index:2}
+.intro{padding:6vw 4vw 4vw;display:grid;grid-template-columns:.45fr 1.55fr;gap:8vw}.label{color:var(--m);margin:0}.intro h2{font-family:var(--s);font-weight:400;font-size:clamp(3rem,6.2vw,6.8rem);line-height:.92;letter-spacing:-.055em;max-width:1000px}.intro h2 em{font-style:italic}.intro p{max-width:650px;color:#69665f;font-size:.8rem;line-height:1.9;margin-top:38px}
+.form-section{min-height:100svh;padding:clamp(1.25rem,3vh,2.25rem) 4vw clamp(2rem,5vh,3.5rem);display:grid;grid-template-columns:.55fr 1.45fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;box-sizing:border-box}.form-aside{align-self:center}.form-aside h3{font-family:var(--s);font-size:clamp(1.85rem,3.4vw,3.1rem);font-weight:400;line-height:.95;letter-spacing:-.045em;margin-top:14px}.form-aside p{color:var(--m);font-size:.68rem;line-height:1.65;max-width:260px;margin-top:16px}
+.form-step{padding:0 0 0.85rem}.step-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem}.step-number{font-family:var(--s);font-size:1.05rem}.step-title{font-family:var(--s);font-size:1.45rem;font-weight:400;letter-spacing:-.03em}.step-hint{color:var(--m);font-size:.5rem;text-transform:uppercase;letter-spacing:.12em}.fields{display:grid;grid-template-columns:1fr 1fr;gap:0.85rem 1.35rem}.field.full{grid-column:1/-1}.field label{display:block;color:var(--m);font-size:.5rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;border:0;border-bottom:1px solid #11114d;background:transparent;padding:8px 0 10px;color:var(--i);outline:0;border-radius:0;font-size:.78rem}.field input:focus,.field textarea:focus{border-color:var(--i)}.field textarea{resize:none;min-height:52px;max-height:52px;line-height:1.5}
+.submit-row{padding-top:0.85rem;margin-top:0.15rem;display:flex;justify-content:space-between;align-items:center;gap:1.25rem}.submit-note{color:var(--m);font-size:.52rem;line-height:1.55;max-width:260px}.submit{border:1px solid var(--i);background:var(--i);color:#fff;padding:0.55rem 0.9rem;cursor:pointer;font-size:.52rem;text-transform:uppercase;letter-spacing:.12em;transition:.4s var(--e);white-space:nowrap}.submit:hover{background:transparent;color:var(--i)}.success{display:none;margin-top:12px;padding:12px;border:1px solid var(--l);background:var(--p2);font-size:.65rem;line-height:1.6}
+.statement{background:var(--d);color:#fff;padding:12vw 4vw;min-height:75vh;display:flex;align-items:center}.statement-inner{width:100%;display:grid;grid-template-columns:.3fr 1.7fr;gap:7vw}.statement h2{font-family:var(--s);font-weight:400;font-size:clamp(3.6rem,8vw,9.5rem);line-height:.85;letter-spacing:-.065em}.statement-note{align-self:end;max-width:290px;color:#fff7;font-size:.68rem;line-height:1.8;margin-top:45px}
+.expect{padding:9vw 4vw;display:grid;grid-template-columns:.65fr 1.35fr;gap:9vw}.expect h2{font-family:var(--s);font-size:clamp(2.8rem,5vw,5.5rem);line-height:.92;font-weight:400;letter-spacing:-.05em}.faq{}details{}summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--s);font-size:1.35rem}summary::-webkit-details-marker{display:none}summary:after{content:"+";font-family:var(--n);color:var(--m)}details[open] summary:after{content:"−"}details p{max-width:650px;padding:0 35px 18px 0;color:var(--m);font-size:.7rem;line-height:1.8}
+.cta{min-height:95vh;position:relative;overflow:hidden;color:#fff;display:flex;align-items:center;background:#151513;padding-bottom:calc(clamp(4.75rem,11vw,8.25rem) + clamp(5rem,12vh,8.5rem));box-sizing:border-box}.cta-bg{position:absolute;inset:0;background:linear-gradient(90deg,#000c,#0002),url("https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=2300&q=88") center/cover}.cta-content{position:relative;z-index:2;padding:0 4vw}.cta h2{font-family:var(--s);font-size:clamp(4rem,9vw,10rem);font-weight:400;line-height:.83;letter-spacing:-.065em}.cta p{color:#fffa;font-size:.72rem;line-height:1.8;max-width:340px;margin-top:35px}
+@media(max-width:850px){.hero{min-height:82svh}.hero-content{grid-template-columns:1fr;padding:0 5vw 12vw}.hero h1{font-size:clamp(4.1rem,17vw,7rem)}.hero-copy{justify-self:start;margin-top:25px}.scroll{display:none}.intro{grid-template-columns:1fr;gap:30px;padding:12vw 5vw 2rem}.form-section{grid-template-columns:1fr;gap:1.25rem;padding:1.5rem 5vw 3rem;min-height:auto;align-items:start}.form-aside{position:static}.fields{grid-template-columns:1fr 1fr;gap:0.85rem 1rem}.submit-row{gap:1rem}.submit{width:auto}.statement{padding:20vw 5vw}.statement-inner{grid-template-columns:1fr;gap:55px}.expect{grid-template-columns:1fr;gap:55px;padding:17vw 5vw}.cta{min-height:85vh}.cta-content{padding:0 5vw}}
+@media(max-width:560px){.fields{grid-template-columns:1fr}.submit-row{flex-direction:column;align-items:stretch}.submit{width:100%;text-align:center}}
+</style>
+</head>
+<body class="page-start">
+
+<header class="site-header">
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <a class="brand" href="index.html#hero" aria-label="Studio home">
+    <span class="brand__name">Studio</span>
+    <span class="brand__place">Real Estate</span>
+  </a>
+  <div class="header-actions">
+    <a class="header-phone" href="tel:7188086479">718-808-6479</a>
+    <a class="btn-inquire" href="#brief">Contact</a>
+  </div>
+</header>
+
+<nav class="site-menu" id="site-menu" aria-hidden="true">
+  <div class="site-menu__inner">
+    <ul class="site-menu__links">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="index.html#statement">Work</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="start-project.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<section class="hero">
+<div class="hero-bg"></div><div class="hero-grid"></div>
+<div class="hero-content">
+<div><div class="eyebrow">Let's work together</div><h1>Start a<br><em>project.</em></h1></div>
+<div class="hero-copy"><p>Tell us what you're building, where you're headed, and what success looks like. We'll take it from there.</p><div class="hint">Usually replies within 1–2 business days</div></div>
+</div><div class="scroll">Begin your brief ↓</div>
+</section>
+
+<section class="intro">
+<div class="label">01 — The Beginning</div>
+<div><h2>Good projects begin with <em>good questions.</em></h2><p>Whether you're launching a new property, refreshing an existing brand, or creating a digital experience from the ground up, this short brief gives us the context we need to understand your vision.</p></div>
+</section>
+
+<section class="form-section" id="brief">
+<aside class="form-aside">
+<div class="label">02 · Project Brief</div>
+<h3>Let's understand<br>the opportunity.</h3>
+<p>Share a few essentials. We'll follow up to shape the right website for your property or brand.</p>
+</aside>
+
+<form class="project-form" id="projectForm">
+<div class="form-step"><div class="step-head"><div><div class="step-number">01</div><div class="step-title">About you</div></div><div class="step-hint">Tell us who to reach</div></div>
+<div class="fields">
+<div class="field"><label>Full name *</label><input name="name" type="text" placeholder="Your name" required></div>
+<div class="field"><label>Company / Developer</label><input name="company" type="text" placeholder="Brand or developer name"></div>
+<div class="field"><label>Email address *</label><input name="email" type="email" placeholder="you@example.com" required></div>
+<div class="field"><label>Phone / WhatsApp *</label><input name="phone" type="tel" placeholder="+91" required></div>
+<div class="field"><label>Property / project name *</label><input name="projectName" type="text" placeholder="e.g. Melange One" required></div>
+<div class="field"><label>Location *</label><input name="location" type="text" placeholder="City, State" required></div>
+<div class="field full"><label>What do you need the website for? *</label><textarea name="message" placeholder="Launch a project site, refresh your developer brand, galleries, floor plans, enquiries…" required></textarea></div>
+</div></div>
+
+<div class="submit-row"><p class="submit-note">We'll only use these details to follow up about your project.</p><button class="submit" type="submit">Send Brief ↗</button></div>
+<div class="success" id="success">Thank you, your project brief has been received. We'll be in touch shortly.</div>
+</form>
+</section>
+
+<section class="statement"><div class="statement-inner"><div class="label" style="color:#fff6">03 — Philosophy</div><div><h2>From first thought<br>to <em>final detail.</em></h2><p class="statement-note">We believe the best work happens when strategy, design and execution are considered together—not as separate pieces.</p></div></div></section>
+
+<section class="expect">
+<div><div class="label">04 — What Happens Next</div><h2>Simple from<br>here.</h2></div>
+<div class="faq">
+<details open><summary>01 — We review your brief</summary><p>We'll look through your requirements, goals, location, scope and timeline to understand whether we're the right fit.</p></details>
+<details><summary>02 — We start a conversation</summary><p>We'll get in touch to clarify the brief, answer questions and discuss what the project could look like.</p></details>
+<details><summary>03 — We define the scope</summary><p>Once the direction is clear, we'll outline deliverables, timelines, responsibilities and the proposed investment.</p></details>
+<details><summary>04 — We begin</summary><p>After everything is aligned, the project moves into its first stage with a clear roadmap and shared direction.</p></details>
+</div>
+</section>
+
+<section class="cta"><div class="cta-bg"></div><div class="cta-content"><div class="eyebrow">Ready when you are</div><h2>Let's make<br><em>something real.</em></h2><p>Great spaces deserve great stories. Let's start yours.</p></div></section>
+</main>
+
+<footer class="site-footer">
+  <svg class="site-footer__wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,118 C150,108 240,34 390,48 C560,64 700,118 860,132 C1040,148 1180,118 1320,108 C1380,104 1415,102 1440,104 L1440,160 L0,160 Z" />
+  </svg>
+  <div class="site-footer__body">
+    <div class="site-footer__inner">
+      <a class="brand site-footer__brand" href="index.html#hero" aria-label="Studio home">
+        <span class="brand__name">Studio</span>
+        <span class="brand__place">Real Estate</span>
+      </a>
+            <nav class="site-footer__nav" aria-label="Footer">
+        <a href="index.html#hero">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="index.html#statement">Work</a>
+        <a href="project.html">Projects</a>
+        <a href="start-project.html">Inquire</a>
+      </nav>
+      <div class="site-footer__actions">
+        <a class="site-footer__phone" href="tel:7188086479">718-808-6479</a>
+        <a class="btn-inquire site-footer__btn" href="#brief">Contact</a>
+      </div>
+    </div>
+    <div class="site-footer__bar">
+      <p>Architecture · Real Estate · Digital</p>
+      <p>© 2026 Studio. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=build11"></script>
+<script>
+document.getElementById("projectForm").addEventListener("submit",function(e){
+e.preventDefault();
+if(!this.checkValidity()){this.reportValidity();return}
+document.getElementById("success").style.display="block";
+this.querySelector(".submit").textContent="Brief Received ✓";
+this.querySelector(".submit").disabled=true;
+});
+</script>
+</body>
+</html>

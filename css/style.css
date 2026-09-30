@@ -1,47 +1,6 @@
 /* ============================================
-   Olympia Dumbo — Base & Fonts
+   Studio — Base & Fonts
    ============================================ */
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
-    format("truetype-variations");
-  font-weight: 100 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("../Josefin_Sans/Satoshi-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("../Josefin_Sans/Satoshi-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("../Josefin_Sans/Satoshi-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("../Josefin_Sans/Satoshi-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   --color-white: #ffffff;
@@ -65,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Satoshi", "Josefin Sans", sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   color: var(--color-white);
   background: var(--color-ink);
   line-height: 1.4;
@@ -156,7 +115,7 @@ ul {
 }
 
 .brand__name {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 200;
   font-size: clamp(1.35rem, 2.2vw, 1.85rem);
   letter-spacing: 0.28em;
@@ -166,7 +125,7 @@ ul {
 }
 
 .brand__place {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.55rem, 0.85vw, 0.68rem);
   letter-spacing: 0.55em;
@@ -185,7 +144,7 @@ ul {
 }
 
 .header-phone {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.7rem, 1vw, 0.82rem);
   letter-spacing: 0.04em;
@@ -206,7 +165,7 @@ ul {
   padding: 0.7rem 1.35rem;
   background: var(--color-white);
   color: var(--color-black);
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.72rem;
   letter-spacing: 0.14em;
@@ -249,7 +208,7 @@ ul {
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  padding: 6rem var(--header-pad-x) 3rem;
+  padding: 5rem var(--header-pad-x) 3rem;
 }
 
 .site-menu__links {
@@ -258,12 +217,13 @@ ul {
 
 .site-menu__links a {
   display: inline-block;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 200;
-  font-size: clamp(1.75rem, 5vw, 3.25rem);
-  letter-spacing: 0.18em;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 0.45em 0;
+  padding: 0.4em 0;
+  line-height: 1.15;
   transition: opacity 0.25s ease;
 }
 
@@ -280,6 +240,7 @@ ul {
 .site-menu.is-open .site-menu__links li:nth-child(3) { animation-delay: 0.2s; }
 .site-menu.is-open .site-menu__links li:nth-child(4) { animation-delay: 0.26s; }
 .site-menu.is-open .site-menu__links li:nth-child(5) { animation-delay: 0.32s; }
+.site-menu.is-open .site-menu__links li:nth-child(6) { animation-delay: 0.38s; }
 
 @keyframes menuLinkIn {
   from {
@@ -378,7 +339,7 @@ body.menu-open .header-actions {
 }
 
 .hero__eyebrow {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.58rem, 1vw, 0.72rem);
   letter-spacing: 0.28em;
@@ -388,7 +349,7 @@ body.menu-open .header-actions {
 }
 
 .hero__title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   font-size: clamp(2rem, 6vw, 4.6rem);
   line-height: 1.08;
@@ -402,7 +363,7 @@ body.menu-open .header-actions {
 }
 
 .hero__subtitle {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: clamp(0.62rem, 1.15vw, 0.8rem);
   letter-spacing: 0.22em;
@@ -421,7 +382,7 @@ body.menu-open .header-actions {
   min-width: 9rem;
 }
 
-/* Hero entrance — triggered by .is-ready on body */
+/* Hero entrance â€” triggered by .is-ready on body */
 [data-hero-animate] {
   opacity: 0;
   transform: translateY(28px);
@@ -581,7 +542,7 @@ body.is-ready .scroll-hint {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.55rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.58rem, 1vw, 0.72rem);
   letter-spacing: 0.22em;
@@ -602,7 +563,7 @@ body.is-ready .scroll-hint {
   max-width: 12ch;
   margin-top: clamp(1.5rem, 4vh, 3rem);
   margin-bottom: clamp(1.5rem, 4vh, 3rem);
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: clamp(3.1rem, 9.5vw, 7.5rem);
   line-height: 0.92;
@@ -638,7 +599,7 @@ body.is-ready .scroll-hint {
 
 .statement__copy {
   max-width: 28rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: clamp(0.88rem, 1.35vw, 1.05rem);
   line-height: 1.55;
@@ -668,7 +629,7 @@ body.is-ready .scroll-hint {
   align-items: center;
   gap: 0.85rem;
   margin-top: clamp(2rem, 5vh, 3.5rem);
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.28em;
@@ -777,7 +738,7 @@ body.is-ready .scroll-hint {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.18em;
@@ -808,7 +769,7 @@ body.is-ready .scroll-hint {
 }
 
 .services__title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   font-size: clamp(1.55rem, 3.6vw, 3.1rem);
   line-height: 1.15;
@@ -840,7 +801,7 @@ body.is-ready .scroll-hint {
 }
 
 .services__lead {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.98rem, 1.35vw, 1.08rem);
   line-height: 1.65;
@@ -863,7 +824,7 @@ body.is-ready .scroll-hint {
   gap: 0.65rem;
   padding: 0.85rem 1.15rem;
   border: 1px solid var(--services-ink);
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
@@ -957,7 +918,7 @@ body.is-ready .scroll-hint {
 
 .services__num span {
   display: inline-block;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
@@ -998,7 +959,7 @@ body.is-ready .scroll-hint {
 }
 
 .services__tag {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.16em;
@@ -1008,7 +969,7 @@ body.is-ready .scroll-hint {
 }
 
 .services__info h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(1.2rem, 2.1vw, 1.55rem);
   letter-spacing: 0.06em;
@@ -1025,7 +986,7 @@ body.is-ready .scroll-hint {
 }
 
 .services__info p:not(.services__tag) {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.88rem, 1.1vw, 0.98rem);
   line-height: 1.6;
@@ -1082,7 +1043,7 @@ body.is-ready .scroll-hint {
   left: 0.7rem;
   bottom: 0.65rem;
   right: 0.7rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.55rem;
   letter-spacing: 0.14em;
@@ -1183,7 +1144,7 @@ body.is-ready .scroll-hint {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.18em;
@@ -1214,7 +1175,7 @@ body.is-ready .scroll-hint {
 }
 
 .projects__title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 500;
   font-size: clamp(2.35rem, 6.2vw, 5rem);
   line-height: 0.98;
@@ -1310,7 +1271,7 @@ body.is-ready .scroll-hint {
 }
 
 .projects__lead {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.95rem, 1.3vw, 1.05rem);
   line-height: 1.65;
@@ -1341,7 +1302,7 @@ body.is-ready .scroll-hint {
   padding: 0.8rem 1.35rem;
   background: var(--projects-ink);
   color: #ffffff;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
@@ -1429,7 +1390,7 @@ body.is-ready .scroll-hint {
   position: absolute;
   left: 0.6rem;
   bottom: 0.45rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.52rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1490,7 +1451,7 @@ body.is-ready .scroll-hint {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1510,7 +1471,7 @@ body.is-ready .scroll-hint {
 }
 
 .projects__index {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   color: #8a8a8a;
@@ -1518,7 +1479,7 @@ body.is-ready .scroll-hint {
 }
 
 .projects__copy h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   letter-spacing: 0.06em;
@@ -1529,7 +1490,7 @@ body.is-ready .scroll-hint {
 }
 
 .projects__copy p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.78rem;
   color: var(--projects-muted);
   word-break: break-all;
@@ -1615,7 +1576,7 @@ body.is-ready .scroll-hint {
 }
 
 .vision__title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 200;
   font-size: clamp(1.65rem, 3.8vw, 2.85rem);
   line-height: 1.12;
@@ -1642,7 +1603,7 @@ body.is-ready .scroll-hint {
   flex-shrink: 0;
   padding: 0.75rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.85);
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.65rem;
   letter-spacing: 0.14em;
@@ -1687,7 +1648,7 @@ body.is-ready .scroll-hint {
 }
 
 .approach__eyebrow {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.28em;
@@ -1705,7 +1666,7 @@ body.is-ready .scroll-hint {
 }
 
 .approach__title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(2.85rem, 6.4vw, 5.4rem);
   line-height: 0.94;
@@ -1764,7 +1725,7 @@ body.is-ready .scroll-hint {
 }
 
 .approach__copy {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: clamp(0.95rem, 1.25vw, 1.08rem);
   line-height: 1.7;
@@ -1834,7 +1795,7 @@ body.is-ready .scroll-hint {
 
 .approach__value {
   display: block;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(1.85rem, 3.2vw, 2.65rem);
   line-height: 1;
@@ -1845,7 +1806,7 @@ body.is-ready .scroll-hint {
 
 .approach__label {
   display: block;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.58rem;
   letter-spacing: 0.2em;
@@ -2029,7 +1990,7 @@ body.is-ready .scroll-hint {
 }
 
 .build__eyebrow {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.28em;
@@ -2058,7 +2019,7 @@ body.is-ready .scroll-hint {
 
 .build__title {
   min-width: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(2.2rem, 4.8vw, 4.5rem);
   line-height: 0.95;
@@ -2098,7 +2059,7 @@ body.is-ready .scroll-hint {
   max-width: none;
   margin: 0;
   padding: 0 0 0.2rem;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 1.05rem;
   line-height: 1.7;
@@ -2124,7 +2085,7 @@ body.is-ready .scroll-hint {
   left: -0.06em;
   top: 50%;
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 200;
   font-size: clamp(10rem, 26vw, 20rem);
   line-height: 0.7;
@@ -2202,7 +2163,7 @@ body.is-ready .scroll-hint {
 
 .build__num {
   flex: 0 0 auto;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.2em;
@@ -2214,7 +2175,7 @@ body.is-ready .scroll-hint {
 
 .build__name {
   min-width: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(1.7rem, 4.4vw, 3.9rem);
   line-height: 0.95;
@@ -2244,7 +2205,7 @@ body.is-ready .scroll-hint {
   margin: 0;
   padding: 0 0 0 1.15rem;
   border-left: 1px solid #d8d8d8;
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 1.02rem;
   line-height: 1.65;
@@ -2280,7 +2241,7 @@ body.is-ready .scroll-hint {
 .start {
   --footer-wave-h: clamp(4.75rem, 11vw, 8.25rem);
   position: relative;
-  min-height: min(100vh, 58rem);
+  min-height: min(115vh, 68rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2288,7 +2249,7 @@ body.is-ready .scroll-hint {
   color: #ffffff;
   background: #0c0e12;
   isolation: isolate;
-  padding-bottom: calc(var(--footer-wave-h) + clamp(2.5rem, 6vh, 4.5rem));
+  padding-bottom: calc(var(--footer-wave-h) + clamp(5rem, 12vh, 8.5rem));
   box-sizing: border-box;
 }
 
@@ -2351,7 +2312,7 @@ body.is-ready .scroll-hint {
   z-index: 1;
   width: 100%;
   max-width: 48rem;
-  padding: clamp(4rem, 9vh, 6rem) var(--header-pad-x) clamp(3.5rem, 8vh, 5.5rem);
+  padding: clamp(4rem, 9vh, 6rem) var(--header-pad-x) clamp(5rem, 11vh, 7.5rem);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -2359,7 +2320,7 @@ body.is-ready .scroll-hint {
 }
 
 .start__eyebrow {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.32em;
@@ -2377,7 +2338,7 @@ body.is-ready .scroll-hint {
 }
 
 .start__title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 300;
   font-size: clamp(1.75rem, 4.6vw, 3.35rem);
   line-height: 1.05;
@@ -2448,7 +2409,7 @@ body.is-ready .scroll-hint {
   gap: 0.6rem;
   padding: 0.85rem 1.35rem;
   border: 1px solid rgba(255, 255, 255, 0.85);
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.18em;
@@ -2551,7 +2512,7 @@ body.is-ready .scroll-hint {
 }
 
 .site-footer__nav a {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
@@ -2574,7 +2535,7 @@ body.is-ready .scroll-hint {
 }
 
 .site-footer__phone {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(0.7rem, 1vw, 0.82rem);
   letter-spacing: 0.04em;
@@ -2612,7 +2573,7 @@ body.is-ready .scroll-hint {
 }
 
 .site-footer__bar p {
-  font-family: "Satoshi", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 0.62rem;
   letter-spacing: 0.18em;
